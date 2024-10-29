@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+    background-color: #1f1d1d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.heading {
+    text-align: center;
+    margin: 30px auto 0;
+    color: #fff;
+    text-wrap: wrap;
+}
+
+.heading span {
+    color: hsl(225, 73%, 57%);
+    font-size: 50px;
+}
+
+@media (max-width : 767px) {
+    .heading span {
+        font-size: 35px;
+    }
+}
+
+.container {
+    margin-top: 80px;
+    width: min(700px, 70%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form {
+    width: 100%;
+    background-color: #fbf9f9;
+    border-radius: 100px;
+    padding: 15px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 20px;
+    width: calc(100% - 100px);
+    border-radius: 20px;
+    flex: 1;
+    margin-left: 10px;
+}
+
+.add {
+    font-weight: bold;
+    border: none;
+    background-color: #1f1d1d;
+    color: hsl(225, 73%, 57%);
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.tasks {
+    width: 95%;
+    margin-top: 50px;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+    text-wrap: wrap;
+    padding: 8px;
+    background-color: hsl(225, 73%, 57%);
+    border-radius: 5px;
+    font-size: 20px;
+    color: whitesmoke;
+    box-shadow: 0 0 10px 0 hsl(0deg 20% 98.04% / 23%);
+}
+
+.task:not(:last-of-type) {
+    margin-bottom: 15px;
+}
+
+.tasks .task.done {
+    text-decoration: line-through;
+    background-color: hsl(225, 57%, 23%);
+    box-shadow: 0 0 0 0;
+}
+
+.tasks .task span {
+    font-size: 10px;
+    background-color: #f00;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: flex-start;
+
+}
