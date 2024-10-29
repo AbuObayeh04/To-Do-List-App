@@ -58,6 +58,7 @@ body {
     border-radius: 20px;
     flex: 1;
     margin-left: 10px;
+    gap: 5px;
 }
 
 .add {
@@ -100,7 +101,7 @@ body {
 }
 
 .tasks .task.done {
-    text-decoration: line-through;
+    opacity: .5 ;
     background-color: hsl(225, 57%, 23%);
     box-shadow: 0 0 0 0;
 }
