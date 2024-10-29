@@ -1,5 +1,6 @@
 # Todo List App
 
+![Design preview for the Todo list App](screenshoot.png)
 
 ## This is my Todo list app
 
