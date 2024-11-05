@@ -22,11 +22,16 @@ tasksDiv.addEventListener("click", (e) => {
   }
 });
 
-submit.addEventListener("click", function () {
-  if (input.value !== "") {
+function handleAddTask(){
+   if (input.value !== "") {
     addTask(input.value);
     input.value = "";
   }
+}
+
+submit.addEventListener("click", handleAddTask);
+input.addEventListener("keypress" , function(event){
+  if (event.key == "Enter") handleAddTask() ; 
 });
 
 function addTask(taskText) {
